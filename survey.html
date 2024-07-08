@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset = "UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content= "width=device-width, initial-scale=1.0">
+
+    <title>Comicon 2023 Survey</title>
+    <style>
+      body{
+        background-color: #b8bff5;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+      }
+      form{
+        background-color: #fff;
+        max-width: 900px;
+        margin: 50px auto;
+        padding: 30px 20px;
+        box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+      }
+      .form-control {
+        text-align: left;
+        margin-bottom: 25px;
+        }
+ 
+    .form-control label {
+        display: block;
+        margin-bottom: 10px;
+        }
+      label {
+        display: block;
+        margin-top: 10px;
+      }
+      .form-control {
+        text-align: left;
+        margin-bottom: 25px;
+        }
+ 
+     .form-control label {
+        display: block;
+        margin-bottom: 10px;
+        }
+ 
+      input[type="radio"],
+      input[type="checkbox"] {
+        margin-right: 10px;
+      }
+      .form-control input[type="radio"],
+      .form-control input[type="checkbox"] {
+        display: inline-block;
+        width: auto;
+        }
+    .form-control input,
+    .form-control select,
+    .form-control textarea {
+        border: 1px solid #9c9a9c;
+        border-radius: 2px;
+        font-family: inherit;
+        padding: 10px;
+        display: block;
+        width: 95%;
+        }  
+      button[type="submit"] {
+        background-color: #d1c3f4;
+        border: 1px solid #777;
+        border-radius: 2px;
+        font-family: inherit;
+        font-size: 21px;
+        display: block;
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 20px;
+      }
+      button[type="submit"]:hover {
+        background-color: #8f76ec;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Comicon 2023 Survey</h1>
+    <p>Thank you for taking the time to complete our survey. Your feedback is important to us and will help us create a successful event for all.</p>
+    <form>
+        <div class="form-control">
+                  <label>Guest preferences:</label><select id="guest_preferences" name="guest_preferences">
+                        <option value="Marvel">Marvel</option>
+                        <option value="DC">DC</option>
+                        <option value="Star Wars">Star Wars</option>
+                        <option value="Anime/Manga">Anime/Manga</option>
+                        <option value="Other">Other</option>
+                        </select> 
+        </div>
+        <div class = "form-control">
+            <label>Gender:</label>
+            <label><input type="radio" id="male" name="gender" value="male">Male</input></label>
+            <label><input type="radio" id="female" name="gender" value="female">Female</input></label>
+        </div>
+  
+        <div class="form-control">
+            <label>Age range:</label><input type="radio" id="18-25" name="age_range" value="18-25">18-25</input></label>
+            <label></label><input type="radio" id="26-35" name="age_range" value="26-35">26-35</input></label>
+            <label></label><input type="radio" id="36-45" name="age_range" value="36-45">36-45</input></label>
+            <label></label><input type="radio" id="46+" name="age_range" value="46+">46+</input></label>
+          
+        </div>
+        <div class="form-control">
+         <label>Province of residence:</label><select id="province_of_residence" name="province_of_residence">
+                <option value="Eastern Cape">Eastern Cape</option>
+                <option value="Free State">Free State</option>
+                <option value="Gauteng">Gauteng</option>
+                <option value="KwaZulu-Natal">KwaZulu-Natal</option>
+                <option value="Limpopo">Limpopo</option>
+                <option value="Mpumalanga">Mpumalanga</option>
+                <option value="North West">North West</option>
+                <option value="Northern Cape">Northern Cape</option>
+                <option value="Western Cape">Western Cape</option>
+              </select>
+              
+        </div>
+        <div class="form-control">
+            <label>Occupation:<input type="text" id="occupation" name="occupation"></input></label>
+        </div>
+        <div class="form-control" >
+            <label>What are you looking forward to the most at Comicon 2023?<textarea id="feedback" name="feedback"></textarea></label>  
+        </div>
+        <div class="form-control" >
+           <label>Agree to receive promotional emails from Kimiko Entertainment<input type="checkbox" id="promo_emails" name="promo_emails" value="agree"></input></label>
+        </div>  
+  
+        <div class="form-control" >
+            <label>Agree to share your details with Bumblebee Beki Sneakers and Jester Toys for advertising purposes<input type="checkbox" id="share_details" name="share_details" value="agree"></input></label> 
+        </div>
+ 
+  <br>
+  <center><h2><button type="submit">Submit</button></h2></center>
+</form>
+</body>
+</html>
